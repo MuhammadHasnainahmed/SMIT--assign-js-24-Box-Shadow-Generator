@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Shadows Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Box Shadows</h1> 
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Customize Shadows</h2>
+            <hr>
+
+            <!-- Horizontal offset -->
+            <div>
+                <div class="shadow">
+                    <p>Horizontal offset</p>
+                    <p class="value">0px</p>
+                </div>
+                <input type="range" class="range" min="-100" max="100" value="0">
+            </div>
+            <hr>
+
+            <!-- Vertical offset -->
+            <div>
+                <div class="shadow">
+                    <p>Vertical offset</p>
+                    <p class="value">0px</p>
+                </div>
+                <input type="range" class="range" min="-100" max="100" value="0">
+            </div>
+            <hr>
+
+            <!-- Blur radius -->
+            <div>
+                <div class="shadow">
+                    <p>Blur radius</p>
+                    <p class="value">0px</p>
+                </div>
+                <input type="range" class="range" min="0" max="100" value="0">
+            </div>
+            <hr>
+
+            <!-- Spread radius -->
+            <div>
+                <div class="shadow">
+                    <p>Spread radius</p>
+                    <p class="value">0px</p>
+                </div>
+                <input type="range" class="range" min="0" max="100" value="0">
+            </div>
+            <hr>
+        </aside>
+
+        <div class="box-container">
+            <div class="box"></div>
+
+            <div class="output">
+                <div class="shadow">
+                    <p>Box Shadow :</p>
+                    <p class="copy"> 0px 0px 0px 0px</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
