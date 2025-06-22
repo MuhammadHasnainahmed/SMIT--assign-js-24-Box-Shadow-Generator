@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customize Shadows Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Shadow Generator - Customize & Preview Shadows</title>
+  <meta name="description" content="Generate and customize CSS box shadows easily with our free online tool. Adjust horizontal, vertical, blur, and spread radius. Copy code instantly.">
+  <meta name="keywords" content="box shadow generator, css shadows, box-shadow tool, web design, shadow preview">
+  <meta name="author" content="Hasnain Ahmed">
+  <link rel="icon" href="logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <h1>Box Shadows</h1> 
-    </nav>
+  <nav>
+    <h1>CSS Box Shadow Generator</h1>
+  </nav>
 
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Customize Shadows</h2>
-            <hr>
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Customize Shadows</h2>
+      <hr />
 
-            <!-- Horizontal offset -->
-            <div>
-                <div class="shadow">
-                    <p>Horizontal offset</p>
-                    <p class="value">0px</p>
-                </div>
-                <input type="range" class="range" min="-100" max="100" value="0">
-            </div>
-            <hr>
-
-            <!-- Vertical offset -->
-            <div>
-                <div class="shadow">
-                    <p>Vertical offset</p>
-                    <p class="value">0px</p>
-                </div>
-                <input type="range" class="range" min="-100" max="100" value="0">
-            </div>
-            <hr>
-
-            <!-- Blur radius -->
-            <div>
-                <div class="shadow">
-                    <p>Blur radius</p>
-                    <p class="value">0px</p>
-                </div>
-                <input type="range" class="range" min="0" max="100" value="0">
-            </div>
-            <hr>
-
-            <!-- Spread radius -->
-            <div>
-                <div class="shadow">
-                    <p>Spread radius</p>
-                    <p class="value">0px</p>
-                </div>
-                <input type="range" class="range" min="0" max="100" value="0">
-            </div>
-            <hr>
-        </aside>
-
-        <div class="box-container">
-            <div class="box"></div>
-
-            <div class="output">
-                <div class="shadow">
-                    <p>Box Shadow :</p>
-                    <p class="copy"> 0px 0px 0px 0px</p>
-                </div>
-            </div>
+      <div>
+        <div class="shadow">
+          <p>Horizontal offset</p>
+          <p class="value">0px</p>
         </div>
+        <input type="range" class="range" min="-100" max="100" value="0" aria-label="Horizontal Offset" />
+      </div>
+      <hr />
 
+      <div>
+        <div class="shadow">
+          <p>Vertical offset</p>
+          <p class="value">0px</p>
+        </div>
+        <input type="range" class="range" min="-100" max="100" value="0" aria-label="Vertical Offset" />
+      </div>
+      <hr />
+
+      <div>
+        <div class="shadow">
+          <p>Blur radius</p>
+          <p class="value">0px</p>
+        </div>
+        <input type="range" class="range" min="0" max="100" value="0" aria-label="Blur Radius" />
+      </div>
+      <hr />
+
+      <div>
+        <div class="shadow">
+          <p>Spread radius</p>
+          <p class="value">0px</p>
+        </div>
+        <input type="range" class="range" min="0" max="100" value="0" aria-label="Spread Radius" />
+      </div>
+    </aside>
+
+    <section class="box-container">
+      <div class="box" aria-label="Preview Box with Shadow"></div>
+      <div class="output">
+        <div class="shadow">
+          <p>Box Shadow :</p>
+          <p class="copy">0px 0px 0px 0px</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 CSS Box Shadow Generator. All rights reserved.</p>
+      <p>Made with 💙 by Hasnain Ahmed</p>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
+  </footer>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
